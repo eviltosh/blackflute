@@ -1,11 +1,12 @@
 # listing number of primes as a function
 
 prime_list=[]
-def prime_generator(num,start):
+start=2
+def prime_generator(num):
     ''' Here's my Docstring and contribution
     to Guido Van Rossum and the PEP 8
     '''
-
+    global start
     while True:
         if start > 1:
             for i in range(2,start):
@@ -21,4 +22,4 @@ def prime_generator(num,start):
             start+=1
             continue
 
-print(prime_generator(10,2))
+print(prime_generator(10))
